@@ -9,8 +9,10 @@ Sys.setlocale("LC_TIME", "eng")
 merged <- cbind(paste(power_sub$Date,power_sub$Time))
 converted <- as.POSIXct(merged, format="%d/%m/%Y %H:%M:%S")
 
-par(mar = c(3,4,2,1))
-plot(converted, new_global_active_power, type="l", ylab = "Global Active Power (kilowatts)")
+par(mar = c(5,5,4,2))
+plot(converted, new_global_active_power, type="l", 
+     xlab = "", ylab = "Global Active Power (kilowatts)",
+     cex.axis = 0.75, cex.lab = 0.75)
 
 dev.copy(png, file = "plot2.png")
 dev.off()

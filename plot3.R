@@ -15,8 +15,8 @@ converted <- as.POSIXct(merged, format="%d/%m/%Y %H:%M:%S")
 
 png("plot3.png", width=480, height=480)
 
-par(mar = c(3,4,2,1))
-plot(converted, sub1, type="l", ylab = "Energy sub metering")
+par(mar = c(5,4,4,2))
+plot(converted, sub1, type="l", xlab = "", ylab = "Energy sub metering")
 lines(converted, sub2, col="red")
 lines(converted, sub3, col="blue")
 
