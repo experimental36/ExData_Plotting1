@@ -7,7 +7,8 @@ power_sub <- power_table[66637:69516,]
 new_global_active_power <- as.numeric(as.vector(power_sub$Global_active_power))
 hist(new_global_active_power, col = "red", 
      xlab = "Global Active Power (kilowatts)", 
-     main = "Global Active Power", cex.lab = 0.75, cex.main = 0.9)
+     main = "Global Active Power", 
+     cex.lab = 0.75, cex.main = 0.9, cex.axis = 0.75)
 
 dev.copy(png, file = "plot1.png")
 dev.off()
