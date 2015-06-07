@@ -1,5 +1,5 @@
 library(data.table)
-power_data <- read.table("power_data.txt", nrows = 69600, sep = ";", head = TRUE)
+power_data <- read.table("household_power_consumption.txt", nrows = 69600, sep = ";", head = TRUE)
 power_table <- data.frame(power_data)
 power_sub <- power_table[66637:69516,]
 
